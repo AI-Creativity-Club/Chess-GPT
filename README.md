@@ -6,6 +6,10 @@ Make sure to install relevent modules needed, both pygame and openai modules nee
 pip install pygame  
 pip install openai  
 ```  
+Then clone the repo using:  
+```
+git clone https://github.com/AI-Creativity-Club/Chess-GPT/    
+```
 ## Relevent documentation
 Check the documentation listed on the corrisponding websites if further questions arise:  
 Python: https://www.python.org/doc/  
