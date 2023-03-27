@@ -1,5 +1,7 @@
 # Chess-GPT
-An implementation of a chess-like game using a combination of pygame and the openai module for Python.
+An implementation of a chess-like game using a combination of pygame and the openai module for Python.  
+   
+**Currently a work in progress.**  
 ## Installation
 Make sure to install relevent modules needed, both pygame and openai modules need to be installed, use:  
 ```  
