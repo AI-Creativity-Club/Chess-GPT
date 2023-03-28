@@ -1,4 +1,4 @@
-# Chess-GPT
+# Chess-GPT *(working title)*
 An implementation of a chess-like game using a combination of pygame and the openai module for Python.  
    
 **Currently a work in progress.**  
