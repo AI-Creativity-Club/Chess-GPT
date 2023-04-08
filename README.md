@@ -22,4 +22,4 @@ openai: https://platform.openai.com/docs/api-reference
 ## Credits:
 - pygame
 - openai
-- Oregon State AICC and it's contributors
+- Oregon State AICC and its contributors
