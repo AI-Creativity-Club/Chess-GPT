@@ -14,7 +14,7 @@ if(argvLen == 3 and int(sys.argv[1]) >= 4 and int(sys.argv[2]) >= 4):
     clock = pygame.time.Clock()
     running = True
     gameBoard.drawBoard(screen)
-#If the user launches with the csv agrument then the code will launch using board.csv as the template
+#If the user launches with the csv argument then the code will launch using board.csv as the template
 elif(argvLen == 2 and sys.argv[1] == 'csv'):
     csvBoard = board.boardcsv('board.csv')
     pygame.init()
@@ -24,7 +24,7 @@ elif(argvLen == 2 and sys.argv[1] == 'csv'):
     csvBoard.drawBoard(screen)
 #If there are no commands specified, Regular chess board size 8x8
 else:
-    print("(warning) - Incorrect arguemnts or no arguements selected - launching with default commands (8x8)")
+    print("(warning) - Incorrect arguments or no arguements selected - launching with default commands (8x8)")
     gameBoard = board.boardxy(8, 8)
     pygame.init()
     screen = gameBoard.setupScene()
