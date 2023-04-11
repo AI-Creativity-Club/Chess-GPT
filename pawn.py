@@ -1,17 +1,36 @@
+"""
+pawn.py: Functionality to do with intializing the board objects.
+"""
 import pygame
 import csv
-
+"""
+CLASS: Pawn
+DESC: defines a pawn that will be draw on the scene
+"""
 class Pawn:
+    """
+    FUNC: __init__
+    DESC: stores information on the sprite
+    I/O: self:obj, x:int, y:int, color:tuple, sprite_path:string | N/A
+    """
     def __init__(self, x, y, color, sprite_path):
         self.x = x
         self.y = y
         self.color = color
         self.sprite = pygame.image.load(sprite_path)
         self.sprite = pygame.transform.scale(self.sprite, (60, 60))
-
+    """
+    FUNC: draw
+    DESC: draws the sprite on the board/scene
+    I/O: self:obj, x:int, y:int | N/A
+    """
     def draw(self, screen):
         screen.blit(self.sprite, (self.x * 60, self.y * 60))
-
+    """
+    FUNC: move
+    DESC: moves the sprite along the board state 2d array object
+    I/O: self:obj, dx:int, dy:int, board_state:2d array | bool
+    """
     def move(self, dx, dy, board_state):
         new_x = self.x + dx
         new_y = self.y + dy
