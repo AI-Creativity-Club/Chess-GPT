@@ -23,11 +23,11 @@ def initialize_board(board_size):
 
     # Add white pawns
     for x in range(board_size):
-        board_state[1][x] = Pawn(x, 1, "white", "pawnwhite60x60.png")
+        board_state[1][x] = Pawn(x, 1, "white", "./assets/pawnwh.png")
 
     # Add black pawns
     for x in range(board_size):
-        board_state[board_size - 2][x] = Pawn(x, board_size - 2, "black", "pawnblack60x60.png")
+        board_state[board_size - 2][x] = Pawn(x, board_size - 2, "black", "./assets/pawnbl.png")
 
     return board_state
 
