@@ -6,14 +6,6 @@ EXTERNAL FILES: board.py, pawn.py, genboard.py
 **IF YOU'RE PUSHING TO MAIN PLEASE UPDATE HEADER COMMENT(S) IF INFORMATION CHANGES.
 (To make the code easier to read and to better understand the outputs and what we write, 
 comments are to be made under the assumption that each variable has a "type". Even if it's not the case.)
-
-~ Note on comment style:
-    * Function Headers:
-        FUNC: <name>
-        DESC: <description of the functionality>
-        IO: <input>:type | <output>:type
-    * Inline:
-        Brief one line descriptions if absolutly nessisary.
 """
 #IMPORTED LIBRARIES & EXTERNAL FILES
 import sys
