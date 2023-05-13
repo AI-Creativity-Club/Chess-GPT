@@ -2,7 +2,6 @@
 pawn.py: Functionality to do with intializing the board objects.
 """
 import pygame
-import csv
 """
 CLASS: Pawn
 DESC: defines a pawn that will be draw on the scene
