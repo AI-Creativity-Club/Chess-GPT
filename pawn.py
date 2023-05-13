@@ -32,20 +32,23 @@ class Pawn:
     I/O: self:obj, dx:int, dy:int, board_state:2d array | bool
     """
     def move(self, dx, dy, board_state):
+
         new_x = self.x + dx
         new_y = self.y + dy
         if new_x < 0 or new_x >= 8 or new_y < 0 or new_y >= 8:
             return False
-
         target_piece = board_state[new_y][new_x]
         if target_piece is None or target_piece.color != self.color:
             if dx == 0 and dy == (1 if self.color == "white" else -1):
                 if target_piece is None:
+                    board_state[self.y][self.x] = None  # Update the old square to be empty
                     self.x, self.y = new_x, new_y
+                    board_state[self.y][self.x] = self  # Update the new square with the piece
                     return True
             elif abs(dx) == 1 and dy == (1 if self.color == "white" else -1):
                 if target_piece is not None and target_piece.color != self.color:
+                    board_state[self.y][self.x] = None  # Update the old square to be empty
                     self.x, self.y = new_x, new_y
+                    board_state[self.y][self.x] = self  # Update the new square with the piece
                     return True
-
         return False
